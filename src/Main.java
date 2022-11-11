@@ -1,10 +1,18 @@
 import java.util.ArrayList;
 
+
 public class Main
 {
     public static void main(String[] args)
     {
-        
+
+        ArrayList<Integer> array = new ArrayList<>();
+        for (int i  = 100; i >= 0; i--)
+        {
+            array.add(i);
+        }
+
+        selectionSort(array);
     }
 
     private static void selectionSort(ArrayList<Integer> array)
