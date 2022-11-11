@@ -4,7 +4,16 @@ public class Main
 {
     public static void main(String[] args)
     {
-        
+        ArrayList<Integer> array = new ArrayList<>();
+        for (int i = 100; i >= 0; i--)
+        {
+            array.add(i);
+        }
+
+        mergeSort(array, 0, array.size() - 1);
+
+        System.out.println(array);
+        System.out.println("Sort is done");
     }
 
     public static void mergeSort(ArrayList<Integer> array, int l, int r)
