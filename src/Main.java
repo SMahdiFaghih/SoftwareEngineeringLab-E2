@@ -4,12 +4,20 @@ public class Main
 {
     public static void main(String[] args)
     {
+        int a = 24;
+        int b = 48;
+
+        System.out.println(add(a, b));
+        System.out.println(minus(a, b));
+        System.out.println(multiply(a, b));
+        System.out.println(divide(a, b));
+
         ArrayList<Integer> array = new ArrayList<>();
-        for (int i  = 100; i >= 0; i--)
+        for (int i = 100; i >= 0; i--)
         {
             array.add(i);
         }
-        
+
         selectionSort(array);
         mergeSort(array, 0, array.size() - 1);
 
@@ -95,5 +103,25 @@ public class Main
             j++;
             k++;
         }
+    }
+
+    private static int add(int a, int b)
+    {
+        return a + b;
+    }
+
+    private static int minus(int a, int b)
+    {
+        return a - b;
+    }
+
+    private static int multiply(int a, int b)
+    {
+        return a * b;
+    }
+
+    private static int divide(int a, int b)
+    {
+        return a / b;
     }
 }
